@@ -1,0 +1,166 @@
+$Red: hsl(0, 78%, 62%);
+$Cyan: hsl(180, 62%, 55%);
+$Orange: hsl(34, 97%, 64%);
+$Blue: hsl(212, 86%, 64%);
+$VeryDarkBlue: hsl(234, 12%, 34%);
+$GrayishBlue: hsl(229, 6%, 66%);
+$VeryLightGray: hsl(0, 0%, 98%);
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+html {
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  body {
+    text-align: center;
+    margin: 0;
+    min-height: 100vh;
+    background-color: $VeryLightGray;
+    margin: 0 2.3rem;
+    .info {
+      h2 {
+        font-size: 1.6rem;
+        margin: 0;
+        color: $VeryDarkBlue;
+      }
+      .light {
+        padding-top: 5.5rem;
+        font-weight: 200;
+      }
+      .bold {
+        font-weight: 600;
+      }
+      p {
+        font-weight: 400;
+        color: $GrayishBlue;
+        margin-bottom: 5rem;
+      }
+    }
+    .features {
+      display: flex;
+      flex-direction: column;
+      row-gap: 1.8rem;
+      margin-bottom: 5.5rem;
+      h3 {
+        margin: 0;
+        font-size: 1.3rem;
+        color: $VeryDarkBlue;
+        text-align: left;
+      }
+      p {
+        margin: 0.3rem 0 0 0;
+        font-size: 0.85rem;
+        color: $GrayishBlue;
+        text-align: left;
+        font-weight: 400;
+        line-height: 1.5rem;
+      }
+      div {
+        padding: 1.5rem 2rem;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 0.5rem;
+        box-shadow: 0px 22px 50px -35px rgba(12, 49, 110, 1);
+        img {
+          margin-top: 2.3rem;
+          width: 4rem;
+          align-self: flex-end;
+        }
+      }
+      .feature1 {
+        border-top: 0.3rem solid $Cyan;
+        h3 {
+        }
+        p {
+        }
+      }
+      .feature2 {
+        border-top: 0.3rem solid $Red;
+        h3 {
+        }
+        p {
+        }
+      }
+      .feature3 {
+        border-top: 0.3rem solid $Orange;
+        h3 {
+        }
+        p {
+        }
+      }
+      .feature4 {
+        border-top: 0.3rem solid $Blue;
+        h3 {
+        }
+        p {
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1024px) {
+  html {
+    body {
+      margin: 0 11rem;
+      .info {
+        h2 {
+          font-size: 2.45rem;
+        }
+        .light {
+        }
+        .bold {
+        }
+        p {
+          font-size: 1.02rem;
+          margin: 1.02rem auto 5rem;
+          max-width: 35rem;
+        }
+      }
+      .features {
+        max-width: 74rem;
+        display: grid;
+        gap: 1.8rem;
+        margin: 0 auto 5.5rem;
+        grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+        grid-template-areas: "feature1 feature2 feature4" ". feature3 .";
+        h3 {
+        }
+        p {
+        }
+        div {
+          img {
+          }
+        }
+        .feature1 {
+          grid-area: feature1;
+          transform: translateY(50%);
+          h3 {
+          }
+          p {
+          }
+        }
+        .feature2 {
+          grid-area: feature2;
+          h3 {
+          }
+          p {
+          }
+        }
+        .feature3 {
+          grid-area: feature3;
+          h3 {
+          }
+          p {
+          }
+        }
+        .feature4 {
+          transform: translateY(50%);
+          grid-area: feature4;
+          h3 {
+          }
+          p {
+          }
+        }
+      }
+    }
+  }
+}

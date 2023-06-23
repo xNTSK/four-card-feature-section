@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+html {
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+}
+html body {
+  text-align: center;
+  margin: 0;
+  min-height: 100vh;
+  background-color: hsl(0deg, 0%, 98%);
+  margin: 0 2.3rem;
+}
+html body .info h2 {
+  font-size: 1.6rem;
+  margin: 0;
+  color: hsl(234deg, 12%, 34%);
+}
+html body .info .light {
+  padding-top: 5.5rem;
+  font-weight: 200;
+}
+html body .info .bold {
+  font-weight: 600;
+}
+html body .info p {
+  font-weight: 400;
+  color: hsl(229deg, 6%, 66%);
+  margin-bottom: 5rem;
+}
+html body .features {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.8rem;
+  margin-bottom: 5.5rem;
+}
+html body .features h3 {
+  margin: 0;
+  font-size: 1.3rem;
+  color: hsl(234deg, 12%, 34%);
+  text-align: left;
+}
+html body .features p {
+  margin: 0.3rem 0 0 0;
+  font-size: 0.85rem;
+  color: hsl(229deg, 6%, 66%);
+  text-align: left;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+html body .features div {
+  padding: 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0px 22px 50px -35px rgb(12, 49, 110);
+}
+html body .features div img {
+  margin-top: 2.3rem;
+  width: 4rem;
+  align-self: flex-end;
+}
+html body .features .feature1 {
+  border-top: 0.3rem solid hsl(180deg, 62%, 55%);
+}
+html body .features .feature2 {
+  border-top: 0.3rem solid hsl(0deg, 78%, 62%);
+}
+html body .features .feature3 {
+  border-top: 0.3rem solid hsl(34deg, 97%, 64%);
+}
+html body .features .feature4 {
+  border-top: 0.3rem solid hsl(212deg, 86%, 64%);
+}
+@media screen and (min-width: 1024px) {
+  html body {
+    margin: 0 11rem;
+  }
+  html body .info h2 {
+    font-size: 2.45rem;
+  }
+  html body .info p {
+    font-size: 1.02rem;
+    margin: 1.02rem auto 5rem;
+    max-width: 35rem;
+  }
+  html body .features {
+    max-width: 74rem;
+    display: grid;
+    gap: 1.8rem;
+    margin: 0 auto 5.5rem;
+    grid-template: repeat(2, 1fr)/repeat(3, 1fr);
+    grid-template-areas: "feature1 feature2 feature4" ". feature3 .";
+  }
+  html body .features .feature1 {
+    grid-area: feature1;
+    transform: translateY(50%);
+  }
+  html body .features .feature2 {
+    grid-area: feature2;
+  }
+  html body .features .feature3 {
+    grid-area: feature3;
+  }
+  html body .features .feature4 {
+    transform: translateY(50%);
+    grid-area: feature4;
+  }
+}/*# sourceMappingURL=style.css.map */
